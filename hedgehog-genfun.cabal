@@ -1,0 +1,22 @@
+name: hedgehog-genfun
+version: 0.1.0
+category: Testing
+synopsis: Function generation for Hedgehog
+license: BSD3
+license-file: LICENCE.txt
+
+author: Andy Morris
+maintainer: Andy Morris <hello@andy-morris.xyz>
+
+cabal-version: >= 2.0
+build-type: Simple
+
+library
+  hs-source-dirs: .
+  default-language: Haskell2010
+  ghc-options: -Wall
+  exposed-modules:
+    Hedgehog.GenFun
+  build-depends:
+    base     ^>= 4.10.1.0,
+    hedgehog ^>= 0.5.1
