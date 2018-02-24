@@ -1,9 +1,8 @@
-{-# OPTIONS_GHC -fdefer-typed-holes #-}
 -- |
 -- Module:      Hedgehog.GenFun
 -- Description: Function generation for Hedgehog
 -- Copyright:   © 2018 Andrew Morris
--- Licence:     AGPL3
+-- Licence:     BSD3
 -- Maintainer:  hello@andy-morris.xyz
 -- Stability:   experimental
 -- Portability: Numerous language extensions
