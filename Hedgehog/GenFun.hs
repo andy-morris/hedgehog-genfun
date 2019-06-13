@@ -16,15 +16,15 @@
 -- === Example
 --
 -- @
--- intFun :: Gen (Fun '[Int, Int] Int)
--- intFun = genFun $ int ':->' int ':->.' int
---   where int = Gen.int (Range.linear 1 1000)
+-- intFun :: 'Gen' ('Fun' '[Int, Int] Int)
+-- intFun = 'genFun' $ int ':->' int ':->.' int
+--   where int = 'Gen.int' ('Range.linear' 1 1000)
 --
 -- prop_foo :: Property
--- prop_foo = property $ do
---   f           <- forAll intFun
---   (x, (y, _)) <- forAll $ argsFor f intFun
---   eval $ appFun f x y
+-- prop_foo = 'property' $ do
+--   f           <- 'forAll' intFun
+--   (x, (y, _)) <- 'forAll' $ 'argsFor' f intFun
+--   eval $ 'appFun' f x y
 -- @
 {-# LANGUAGE
     ConstraintKinds, DataKinds, GADTs, KindSignatures, PatternSynonyms,
